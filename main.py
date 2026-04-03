@@ -3,7 +3,7 @@ import io
 from openai import OpenAI
 import json
 
-API_KEY = "sq-cr7zg9PhiTLRZgHiqkeHW7cFqPzDnW6C"
+API_KEY = "YOUR_API_KEY"
 
 client = OpenAI(
     base_url="https://api.onlysq.ru/ai/openai",
@@ -49,8 +49,6 @@ Constraints:
 
 quest_data = response.choices[0].message.content
 print(json.loads(quest_data)) # type: ignore
-
-
 
 files = ['config.json', 'nodes.json']
 
